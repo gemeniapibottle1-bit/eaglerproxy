@@ -1,0 +1,18 @@
+{
+  "BLOCK_MAP_FORMAT": {
+    "packetId": "BLOCK_MAP",
+    "x": 142,
+    "y": 64,
+    "z": -200,
+    "trueBlockId": "minecraft:netherite_block",
+    "fallbackId": 49
+  },
+  "ITEM_MAP_FORMAT": {
+    "packetId": "ITEM_MAP",
+    "slot": 36,
+    "trueItemId": "minecraft:netherite_sword",
+    "fallbackId": 276,
+    "displayName": "§5Netherite Sword"
+  },
+  "CUSTOM_CHANNEL_NAME": "eagler:moderncompat"
+}

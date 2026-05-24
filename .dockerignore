@@ -1,0 +1,10 @@
+node_modules
+build
+.git
+.local
+replit_runtime
+example_plugins
+*.md
+.replit
+replit.nix
+replit_launch.sh

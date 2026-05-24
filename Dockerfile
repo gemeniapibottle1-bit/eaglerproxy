@@ -7,12 +7,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install
+RUN npm install && npm install typescript
 
 COPY tsconfig.json ./
 COPY src/ ./src/
 
-RUN npx tsc
+RUN ./node_modules/.bin/tsc
 
 
 FROM node:20-slim AS runner

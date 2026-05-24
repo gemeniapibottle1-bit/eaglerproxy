@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/runner/.local/bin/agy "$@"

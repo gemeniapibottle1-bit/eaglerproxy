@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "bmVTwqT0XzbJ9ldFOEypu"
+uri = "file://eaglerproxy-docker.zip"
+type = "unspecified"
+title = "eaglerproxy-docker.zip"

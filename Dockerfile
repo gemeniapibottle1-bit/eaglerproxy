@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install && npm install typescript@5
+RUN npm install && npm install typescript@5 prismarine-block@1.21.0
 
 COPY tsconfig.json ./
 COPY src/ ./src/

@@ -33,7 +33,7 @@ let server = createServer({
     port: config.bindInternalServerPort,
     motdMsg: `${Enums.ChatColor.GOLD}EaglerProxy as a Service`,
     "online-mode": false,
-    version: "1.21.1",
+    version: "1.8.9",
   }),
   sGlobals: ServerGlobals = {
     server: server,

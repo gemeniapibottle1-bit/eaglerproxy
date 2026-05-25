@@ -20,7 +20,7 @@
     "node-fetch": "3.3.1",
     "parse-domain": "7.0.1",
     "prismarine-auth": "^2.7.0",
-    "prismarine-block": "^1.23.0",
+    "prismarine-block": "1.21.0",
     "prismarine-chunk": "^1.40.0",
     "prismarine-registry": "^1.12.0",
     "semver": "^7.6.3",
@@ -28,8 +28,7 @@
     "ws": "^8.18.1"
   },
   "overrides": {
-    "axios": "^1.8.2",
-    "prismarine-block": "1.21.0"
+    "axios": "^1.8.2"
   },
   "type": "module"
 }

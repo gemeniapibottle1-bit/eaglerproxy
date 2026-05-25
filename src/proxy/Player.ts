@@ -173,7 +173,7 @@ export class Player extends EventEmitter {
     this.serverConnection = createClient(
       Object.assign(
         {
-          version: false,
+          version: "1.8.9",
           keepAlive: false,
           hideErrors: false,
         },
@@ -218,7 +218,7 @@ export class Player extends EventEmitter {
       this.serverConnection = createClient(
         Object.assign(
           {
-            version: false,
+            version: "1.8.9",
             keepAlive: false,
             hideErrors: false,
           },

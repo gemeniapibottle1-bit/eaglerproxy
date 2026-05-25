@@ -28,7 +28,8 @@
     "ws": "^8.18.1"
   },
   "overrides": {
-    "axios": "^1.8.2"
+    "axios": "^1.8.2",
+    "prismarine-block": "1.21.0"
   },
   "type": "module"
 }

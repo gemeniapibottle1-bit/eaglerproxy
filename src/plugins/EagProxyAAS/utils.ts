@@ -17,8 +17,8 @@ const Util = PLUGIN_MANAGER.Util;
 const MAX_LIFETIME_CONNECTED = 10 * 60 * 1000,
   MAX_LIFETIME_AUTH = 5 * 60 * 1000,
   MAX_LIFETIME_LOGIN = 1 * 60 * 1000;
-const REGISTRY = Registry.default("1.8"),
-  McBlock = (Block as any).default("1.8"),
+const REGISTRY = Registry.default("1.21.1"),
+  McBlock = (Block as any).default("1.21.1"),
   LOGIN_CHUNK = generateSpawnChunk().dump();
 const logger = new PLUGIN_MANAGER.Logger("PlayerHandler");
 
@@ -650,7 +650,7 @@ export async function onConnect(client: ClientState, metadata?: { ip: string; po
         await player.switchServers({
           host: host,
           port: port,
-          version: "1.8.8",
+          version: "1.21.1",
           username: savedAuth.selectedProfile.name,
           auth: "mojang",
           keepAlive: false,
@@ -895,7 +895,7 @@ export async function onConnect(client: ClientState, metadata?: { ip: string; po
         await player.switchServers({
           host: host,
           port: port,
-          version: "1.8.8",
+          version: "1.21.1",
           keepAlive: false,
           skipValidation: true,
           hideErrors: true,
@@ -980,7 +980,7 @@ export async function onConnect(client: ClientState, metadata?: { ip: string; po
           port: port,
           auth: "offline",
           username: client.gameClient.username,
-          version: "1.8.8",
+          version: "1.21.1",
           keepAlive: false,
           skipValidation: true,
           hideErrors: true,

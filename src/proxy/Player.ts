@@ -47,25 +47,25 @@ export class Player extends EventEmitter {
     this.serverSerializer = createSerializer({
       state: states.PLAY,
       isServer: true,
-      version: "1.21.1",
+      version: "1.8.9",
       customPackets: null,
     });
     this.clientSerializer = createSerializer({
       state: states.PLAY,
       isServer: false,
-      version: "1.21.1",
+      version: "1.8.9",
       customPackets: null,
     });
     this.serverDeserializer = createDeserializer({
       state: states.PLAY,
       isServer: true,
-      version: "1.21.1",
+      version: "1.8.9",
       customPackets: null,
     });
     this.clientDeserializer = createSerializer({
       state: states.PLAY,
       isServer: true,
-      version: "1.21.1",
+      version: "1.8.9",
       customPackets: null,
     });
   }

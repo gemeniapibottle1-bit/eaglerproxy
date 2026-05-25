@@ -4,7 +4,6 @@
     "esModuleInterop": true,
     "target": "ESNext",
     "moduleResolution": "node",
-    "ignoreDeprecations": "6.0",
     "sourceMap": false,
     "outDir": "build",
     "resolveJsonModule": true,

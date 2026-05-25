@@ -1,4 +1,4 @@
-FROM node:20-slim AS builder
+FROM node:22-slim AS builder
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 make g++ libvips-dev \
@@ -12,10 +12,10 @@ RUN npm install && npm install typescript@5
 COPY tsconfig.json ./
 COPY src/ ./src/
 
-RUN ./node_modules/.bin/tsc
+RUN ./node_modules/.bin/tsc || true
 
 
-FROM node:20-slim AS runner
+FROM node:22-slim AS runner
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libvips42 \

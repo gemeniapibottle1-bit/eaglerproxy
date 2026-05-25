@@ -21,7 +21,7 @@ export namespace Motd {
 
     public static async generateMOTDFromPing(host: string, port: number, useNatives: boolean): Promise<MOTD> {
       const pingRes = await ping({ host: host, port: port });
-      if (typeof pingRes.version == "string") throw new Error("Legacy server detected - must be 1.21.1+");
+      if (typeof pingRes.version == "string") throw new Error("Non-1.8 server detected!");
       else {
         const newPingRes = pingRes as NewPingResult;
         let image: Buffer;

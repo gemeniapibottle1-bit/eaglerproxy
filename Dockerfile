@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install && npm install typescript
+RUN npm install && npm install typescript@5
 
 COPY tsconfig.json ./
 COPY src/ ./src/

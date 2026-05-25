@@ -252,7 +252,7 @@ export async function switchServer(cmd: string, sender: Player) {
         await sender.switchServers({
           host: addr,
           port: addrPort,
-          version: "1.8.8",
+          version: "1.21.1",
           keepAlive: false,
           skipValidation: true,
           hideErrors: true,
@@ -282,7 +282,7 @@ export async function switchServer(cmd: string, sender: Player) {
       await sender.switchServers({
         host: addr,
         port: addrPort,
-        version: "1.8.8",
+        version: "1.21.1",
         username: sender.username,
         auth: "offline",
         keepAlive: false,
